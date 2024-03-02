@@ -388,7 +388,7 @@ window.addEventListener('scroll', () => {
   } else {
     $scrollToTopBtn.classList.remove('show')
   }
-})
+}, { passive: true })
 
 $scrollToTopBtn.addEventListener('click', () => {
   window.scrollTo({
